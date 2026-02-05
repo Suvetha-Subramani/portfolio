@@ -133,3 +133,39 @@ p {
 #internship p {
     text-align: justify;
 }
+/* PROJECT FLEX LAYOUT */
+.project {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* LEFT TEXT */
+.project-text {
+    flex: 1;
+}
+
+/* RIGHT IMAGE */
+.project-image {
+    flex: 1;
+    text-align: right;
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        text-align: center;
+    }
+}
