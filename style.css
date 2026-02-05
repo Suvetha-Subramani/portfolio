@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 10% 30px; /* reduced bottom padding */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+/* LEFT IMAGE */
+.hero-left {
+    flex-shrink: 0;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 15%;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* RIGHT CONTENT */
+.hero-right h1 {
+    font-size: 2.8rem;
+    margin: 0 0 10px 0; /* removed top margin */
+}
+
+.hero-right p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+.links a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SECTIONS (FIXED GAP) */
+section {
+    padding: 25px 10%;  /* reduced padding */
+    margin: 0;          /* removed extra margin */
+}
+
+/* ABOUT SECTION (EXTRA FIX) */
+#about {
+    padding-top: 15px; /* keeps About close to hero */
+}
+
+/* HEADINGS (FIXED DEFAULT GAP) */
+h2 {
+    color: #2575fc;
+    margin: 0 0 12px 0; /* removed top margin */
+}
+
+/* PROJECT CARDS */
+.project {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* LIST ITEMS */
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
+
+/* TEXT JUSTIFICATION */
+p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.project p {
+    text-align: justify;
+}
+
+#about p,
+#internship p {
+    text-align: justify;
+}
