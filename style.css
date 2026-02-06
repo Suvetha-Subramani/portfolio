@@ -138,6 +138,7 @@ p {
     display: flex;
     align-items: center;
     gap: 30px;
+    max-width: 900px;
 }
 
 /* LEFT TEXT */
@@ -169,8 +170,4 @@ p {
         text-align: center;
     }
 }
-section {
-    max-width: 1100px;     /* limits width */
-    margin: auto;          /* centers content */
-    padding: 30px 20px;    /* left & right spacing */
-}
+
